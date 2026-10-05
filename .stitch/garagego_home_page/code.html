@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>GarageGo - Home Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#00288E',
+              dark: '#0B1C30',
+              orange: '#FD651E',
+              orangeHover: '#E05312',
+              surface: '#F8F9FF',
+              card: '#FFFFFF',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              accentLight: '#EFF4FF',
+            }
+          },
+          fontFamily: {
+            headline: ['Plus Jakarta Sans', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-brand-surface font-body text-brand-dark antialiased min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://lh3.googleusercontent.com/aida/AEtjO1We_Jzcpa0gMy7-TcVYB9534IJwo4blUV_f01jvMQga157_yJBObQj4XWhbqcUjT126ypZT9wKAR1GuPsVk-16AptUwGxiZ5kxtm3xiAXsrINTv7i_N-ZIfVvCjnL_rkNqg6nTh8d-ZQ1ajOgX4TFVTylTbjrLT6ThLOFUHXR7bq6sWg4hZxN0dpfWOvKRwA_0yO_f0vfkJH26Kj2lAEvPP_bI6jLXb7pid1qgE82zc4sm0TJK4PJ9G41Gg" alt="GarageGo Logo" class="h-9 w-auto"/>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 font-headline font-semibold text-sm">
+        <a href="#" class="text-brand-navy border-b-2 border-brand-navy pb-1">Home</a>
+        <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors">Services</a>
+        <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors">Book Service</a>
+        <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors">Track Booking</a>
+        <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button type="button" aria-label="Toggle Theme" class="w-10 h-10 rounded-lg flex items-center justify-center text-brand-muted hover:bg-slate-100 transition-colors">
+          <span class="material-symbols-outlined text-[20px]">light_mode</span>
+        </button>
+        <a href="#" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-brand-orange text-white font-headline font-bold text-sm shadow-sm hover:bg-brand-orangeHover transition-colors">
+          Book a Service
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-b from-brand-accentLight/60 to-brand-surface relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 flex flex-col items-start gap-5">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-brand-navy font-headline font-semibold text-xs tracking-wider uppercase">
+              <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+              Certified Automotive Services
+            </div>
+            <h1 class="font-headline font-extrabold text-4xl sm:text-5xl text-brand-dark tracking-tight leading-tight">
+              Reliable Vehicle Service, <span class="text-brand-navy">Made Simple</span>
+            </h1>
+            <p class="text-brand-muted text-base sm:text-lg max-w-xl">
+              Book certified maintenance, inspect live telemetry from certified technicians, and enjoy stress-free garage visits with transparent, upfront pricing.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="#quick-booking" class="px-6 py-3 rounded-lg bg-brand-orange text-white font-headline font-bold text-sm shadow-md hover:bg-brand-orangeHover transition-colors flex items-center gap-2">
+                <span>Book a Service</span>
+                <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+              </a>
+              <a href="#services" class="px-6 py-3 rounded-lg bg-white border border-brand-border text-brand-navy font-headline font-semibold text-sm hover:bg-slate-50 transition-colors flex items-center gap-2">
+                <span>Explore Services</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+              </a>
+            </div>
+
+            <div class="grid grid-cols-3 gap-6 pt-6 border-t border-brand-border/60 w-full max-w-lg mt-4">
+              <div>
+                <div class="font-headline font-bold text-2xl text-brand-navy">140+</div>
+                <div class="text-xs text-brand-muted mt-0.5">Service Bays</div>
+              </div>
+              <div>
+                <div class="font-headline font-bold text-2xl text-brand-navy">99.4%</div>
+                <div class="text-xs text-brand-muted mt-0.5">On-Time Completion</div>
+              </div>
+              <div>
+                <div class="font-headline font-bold text-2xl text-brand-orange">4.9 / 5</div>
+                <div class="text-xs text-brand-muted mt-0.5">Verified Reviews</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Booking Card -->
+          <div class="lg:col-span-5" id="quick-booking">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-100 flex flex-col gap-5">
+              <div>
+                <span class="text-xs uppercase tracking-wider font-headline font-bold text-brand-orange">Fast Bay Reservation</span>
+                <h3 class="font-headline font-bold text-xl text-brand-dark mt-1">Instant Slot Dispatch</h3>
+                <p class="text-xs text-brand-muted mt-0.5">Lock real-time bay pricing with zero prepayment.</p>
+              </div>
+
+              <form class="flex flex-col gap-4" onsubmit="event.preventDefault();">
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-headline font-semibold text-xs text-slate-700">Vehicle Category</label>
+                  <select class="w-full h-11 px-3.5 bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-navy/30">
+                    <option>Sedan / Compact</option>
+                    <option selected>Midsize SUV / CUV</option>
+                    <option>Pickup Truck</option>
+                    <option>Commercial Van</option>
+                    <option>Electric & Hybrid</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-headline font-semibold text-xs text-slate-700">Maintenance Package</label>
+                  <select class="w-full h-11 px-3.5 bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-navy/30">
+                    <option>Synthetic Oil & Filter Service ($89)</option>
+                    <option>Brake Rotor & Pad Inspection ($129)</option>
+                    <option selected>150-Point Digital Scan ($149)</option>
+                    <option>Tire Balance & Alignment ($75)</option>
+                    <option>Battery Health Diagnostics ($49)</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-headline font-semibold text-xs text-slate-700">Location or Postal Code</label>
+                  <input type="text" value="Austin Central Bay #03" class="w-full h-11 px-3.5 bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-navy/30"/>
+                </div>
+
+                <div class="p-3 bg-brand-accentLight rounded-lg flex items-center justify-between text-xs">
+                  <span class="text-brand-muted font-medium">Next Open Bay Slot:</span>
+                  <span class="font-headline font-bold text-brand-navy">Today @ 11:30 AM</span>
+                </div>
+
+                <button type="submit" class="w-full h-12 rounded-lg bg-brand-navy hover:bg-blue-900 text-white font-headline font-bold text-sm shadow transition-colors flex items-center justify-center gap-2">
+                  <span>Check Bay Availability</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 bg-white" id="services">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="text-xs uppercase tracking-wider font-headline font-bold text-brand-orange">Engineered Precision</span>
+            <h2 class="font-headline font-bold text-3xl text-brand-dark mt-1">Factory-Grade Maintenance Packages</h2>
+            <p class="text-brand-muted text-sm mt-1 max-w-xl">Every service includes complete digital safety telemetry and verified manufacturer tolerances.</p>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-headline font-semibold text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+            <span class="material-symbols-outlined text-[18px]">verified</span>
+            100% Fixed Quote Guarantee
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Service 1 -->
+          <div class="bg-brand-surface rounded-xl p-6 border border-slate-200/80 hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-blue-100 text-brand-navy flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-[26px]">oil_barrel</span>
+              </div>
+              <h3 class="font-headline font-bold text-lg text-brand-dark">Oil & Filter Service</h3>
+              <p class="text-xs text-brand-muted mt-2">Full synthetic oil change with OEM filter upgrade & fluid top-off checklist.</p>
+              <div class="mt-4 flex items-center gap-2 text-xs text-slate-600 font-medium">
+                <span class="material-symbols-outlined text-[16px] text-brand-navy">schedule</span>
+                <span>45 Mins Duration</span>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-brand-muted block">Starting from</span>
+                <span class="font-headline font-bold text-xl text-brand-navy">$89</span>
+              </div>
+              <button class="px-3.5 py-1.5 rounded-lg bg-brand-orange text-white font-headline font-semibold text-xs hover:bg-brand-orangeHover transition-colors">Book Now</button>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-brand-surface rounded-xl p-6 border border-slate-200/80 hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-blue-100 text-brand-navy flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-[26px]">disc_full</span>
+              </div>
+              <h3 class="font-headline font-bold text-lg text-brand-dark">Brake Rotor & Pad Check</h3>
+              <p class="text-xs text-brand-muted mt-2">Micrometer rotor thickness scan, ceramic pad inspection, and hydraulic pressure test.</p>
+              <div class="mt-4 flex items-center gap-2 text-xs text-slate-600 font-medium">
+                <span class="material-symbols-outlined text-[16px] text-brand-navy">schedule</span>
+                <span>60 Mins Duration</span>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-brand-muted block">Starting from</span>
+                <span class="font-headline font-bold text-xl text-brand-navy">$129</span>
+              </div>
+              <button class="px-3.5 py-1.5 rounded-lg bg-brand-orange text-white font-headline font-semibold text-xs hover:bg-brand-orangeHover transition-colors">Book Now</button>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-brand-surface rounded-xl p-6 border border-slate-200/80 hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-blue-100 text-brand-navy flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-[26px]">tire_repair</span>
+              </div>
+              <h3 class="font-headline font-bold text-lg text-brand-dark">Tire Balance & Alignment</h3>
+              <p class="text-xs text-brand-muted mt-2">High-speed computerized dynamic balancing and digital optical laser toe calibration.</p>
+              <div class="mt-4 flex items-center gap-2 text-xs text-slate-600 font-medium">
+                <span class="material-symbols-outlined text-[16px] text-brand-navy">schedule</span>
+                <span>45 Mins Duration</span>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-brand-muted block">Starting from</span>
+                <span class="font-headline font-bold text-xl text-brand-navy">$75</span>
+              </div>
+              <button class="px-3.5 py-1.5 rounded-lg bg-brand-orange text-white font-headline font-semibold text-xs hover:bg-brand-orangeHover transition-colors">Book Now</button>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-brand-surface rounded-xl p-6 border border-slate-200/80 hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-blue-100 text-brand-navy flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-[26px]">fact_check</span>
+              </div>
+              <h3 class="font-headline font-bold text-lg text-brand-dark">150-Point Digital Scan</h3>
+              <p class="text-xs text-brand-muted mt-2">Complete multi-system bumper-to-bumper vehicle telemetry review with video log.</p>
+              <div class="mt-4 flex items-center gap-2 text-xs text-slate-600 font-medium">
+                <span class="material-symbols-outlined text-[16px] text-brand-navy">schedule</span>
+                <span>90 Mins Duration</span>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-brand-muted block">Starting from</span>
+                <span class="font-headline font-bold text-xl text-brand-navy">$149</span>
+              </div>
+              <button class="px-3.5 py-1.5 rounded-lg bg-brand-orange text-white font-headline font-semibold text-xs hover:bg-brand-orangeHover transition-colors">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-Step Process Section -->
+    <section class="py-16 bg-brand-surface">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs uppercase tracking-wider font-headline font-bold text-brand-orange">Effortless Automotive Care</span>
+          <h2 class="font-headline font-bold text-3xl text-brand-dark mt-1">How GarageGo Works</h2>
+          <p class="text-brand-muted text-sm mt-2">A fully transparent service journey engineered from initial reservation to touchless key pickup.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col">
+            <span class="w-10 h-10 rounded-full bg-brand-navy text-white font-headline font-bold text-lg flex items-center justify-center mb-4">1</span>
+            <h3 class="font-headline font-bold text-base text-brand-dark">Select Service & Vehicle</h3>
+            <p class="text-xs text-brand-muted mt-2">Enter your make and model. GarageGo matches manufacturer OEM service tolerances with guaranteed fixed pricing.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col">
+            <span class="w-10 h-10 rounded-full bg-brand-navy text-white font-headline font-bold text-lg flex items-center justify-center mb-4">2</span>
+            <h3 class="font-headline font-bold text-base text-brand-dark">Pick Bay & Time Slot</h3>
+            <p class="text-xs text-brand-muted mt-2">Reserve an exact certified bay window. No crowded waiting rooms—your lift and technician are prepared for intake.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col">
+            <span class="w-10 h-10 rounded-full bg-brand-orange text-white font-headline font-bold text-lg flex items-center justify-center mb-4">3</span>
+            <h3 class="font-headline font-bold text-base text-brand-dark">Live Video & Telemetry</h3>
+            <p class="text-xs text-brand-muted mt-2">Receive HD technician inspection clips and sensor readouts on your phone. Authorize any needed repair with one tap.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col">
+            <span class="w-10 h-10 rounded-full bg-brand-navy text-white font-headline font-bold text-lg flex items-center justify-center mb-4">4</span>
+            <h3 class="font-headline font-bold text-base text-brand-dark">Contactless Pickup</h3>
+            <p class="text-xs text-brand-muted mt-2">Pay digitally with zero hidden shop levies. Drive away protected by our nationwide 12-month / 12,000-mile warranty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose GarageGo -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs uppercase tracking-wider font-headline font-bold text-brand-orange">The GarageGo Standard</span>
+          <h2 class="font-headline font-bold text-3xl text-brand-dark mt-1">Engineered for Absolute Trust</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col gap-3">
+            <span class="material-symbols-outlined text-[32px] text-brand-navy">engineering</span>
+            <h3 class="font-headline font-bold text-base text-brand-dark">ASE Master Technicians</h3>
+            <p class="text-xs text-brand-muted">All technicians undergo annual recertification and background testing for peak diagnostic quality.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col gap-3">
+            <span class="material-symbols-outlined text-[32px] text-brand-navy">verified</span>
+            <h3 class="font-headline font-bold text-base text-brand-dark">100% OEM Parts</h3>
+            <p class="text-xs text-brand-muted">We use only original equipment manufacturer components and factory-approved lubricants.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col gap-3">
+            <span class="material-symbols-outlined text-[32px] text-brand-orange">smart_display</span>
+            <h3 class="font-headline font-bold text-base text-brand-dark">Video Walkthroughs</h3>
+            <p class="text-xs text-brand-muted">Inspect the worn belt or brake pad right on video before approving any repair.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col gap-3">
+            <span class="material-symbols-outlined text-[32px] text-brand-navy">lock</span>
+            <h3 class="font-headline font-bold text-base text-brand-dark">Fixed-Price Guarantee</h3>
+            <p class="text-xs text-brand-muted">The quote you approve is the price on your final receipt. Zero surprise shop fees, ever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-14 bg-brand-dark text-white">
+      <div class="max-w-5xl mx-auto px-6 text-center flex flex-col items-center gap-6">
+        <h2 class="font-headline font-extrabold text-3xl sm:text-4xl tracking-tight">Keep Your Vehicle Ready for the Road</h2>
+        <p class="text-slate-300 text-sm sm:text-base max-w-xl">Join thousands of drivers who trust GarageGo for transparent, certified automotive care.</p>
+        <a href="#quick-booking" class="px-8 py-3.5 rounded-lg bg-brand-orange text-white font-headline font-bold text-sm shadow-md hover:bg-brand-orangeHover transition-colors">
+          Schedule Your Service Today
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+        <div class="flex items-center gap-3">
+          <img src="https://lh3.googleusercontent.com/aida/AEtjO1We_Jzcpa0gMy7-TcVYB9534IJwo4blUV_f01jvMQga157_yJBObQj4XWhbqcUjT126ypZT9wKAR1GuPsVk-16AptUwGxiZ5kxtm3xiAXsrINTv7i_N-ZIfVvCjnL_rkNqg6nTh8d-ZQ1ajOgX4TFVTylTbjrLT6ThLOFUHXR7bq6sWg4hZxN0dpfWOvKRwA_0yO_f0vfkJH26Kj2lAEvPP_bI6jLXb7pid1qgE82zc4sm0TJK4PJ9G41Gg" alt="GarageGo Logo" class="h-7 w-auto brightness-200"/>
+        </div>
+        <div class="flex items-center gap-6 font-headline text-slate-300">
+          <a href="#" class="hover:text-white">Services</a>
+          <a href="#" class="hover:text-white">Book Service</a>
+          <a href="#" class="hover:text-white">Track Booking</a>
+          <a href="#" class="hover:text-white">Support & Emergency (1-800-GARAGE-GO)</a>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>© 2025 GarageGo Inc. All rights reserved.</p>
+        <p class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-[16px] text-emerald-400">verified_user</span>
+          WCAG 2.1 AA Compliant & ASE Certified
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
